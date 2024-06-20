@@ -1,0 +1,27 @@
+@import url(variables.css);
+
+body{
+    padding: var(--space-layout-padding-lr);
+}
+
+.all{
+    border: 1px solid violet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title {
+    border: 1px solid red;
+    text-align: center;
+}
+
+.first_box{
+    border: 1px solid green;
+    margin-top: 9cqmax;
+    width: 51vh;
+}
+
+.header_search{
+    border: 1px solid blue;
+    background-color: #5564eb;
+}
