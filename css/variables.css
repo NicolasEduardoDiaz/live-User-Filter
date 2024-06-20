@@ -3,3 +3,8 @@
     --color-2: #ffffff;
     --space-layout-padding-lr: 0px 15px;
 }
+
+@font-face {
+    font-family: "Roboloto-Slab";
+    src: url(../storage/fonts/RobotoSlab-VariableFont_wght.ttf);
+}

@@ -1,7 +1,11 @@
 @import url(variables.css);
+*{
+    font-family: "Roboloto-Slab";
+}
 
 body{
     padding: var(--space-layout-padding-lr);
+    font-family: "Roboloto_Slab";
 }
 
 .all{
