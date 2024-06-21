@@ -25,6 +25,7 @@ body{
     margin-top: 9cqmax;
     width: 51vh;
     height: 12cm;
+    justify-content: space-between;
 }
 
 .header_search{
