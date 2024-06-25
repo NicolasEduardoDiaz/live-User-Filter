@@ -1,88 +1,86 @@
 @import url(variables.css);
 *{
     font-family: "Roboloto-Slab";
+    box-sizing: border-box;
 }
 
 body{
+    background-color: var(--color-2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
     padding: var(--space-layout-padding-lr);
     font-family: "Roboloto_Slab";
 }
 
-.all{
-    /*border: 1px solid violet;*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0vh 4vh 0vh 4vh;
-}
-.title {
-    /*border: 1px solid red;*/
-    text-align: center;
+.header_container{
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
 }
 
-.first_box{
-    border: 1px solid green;
-    margin-top: 9cqmax;
-    width: 51vh;
-    height: 12cm;
-    justify-content: space-between;
-}
-
-.header_search{
-    /*border: 1px solid blue;*/
-    background-color:   var(--color-1);
-    padding: 0vh 2vh 0vh 2vh;
-    border-top-left-radius: 2vh;
-    border-top-right-radius: 2vh;
-}
-
-.header_search h3{
+.title{
     margin: 0;
+}
+
+.text_title{
+    display: inline-block;
+    margin: 5px 0 20px;
+    opacity: 0.8;
+}
+
+.header{
+    background-color: rgb(48, 135, 221);
     color: var(--color-2);
-    padding-top: 3vh;
-    font-weight: bold;
+    padding: 30px 20px;
 }
 
-.header_search span{
+.header input{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 0;
+    border-radius: 50px;
     color: var(--color-2);
-}
-
-.header_search form{
-    margin-top: 2vh;
-    padding-bottom: 2vh;
-}
-
-.header_search form input{
-    width: 44vh;
-    height: 4.5ch;
-    background-color: var(--color-3);
-    border-radius: 2vh;
-    border: 0px;
-}
-
-.header_search form input[type="text"] {
-    color: white;
-    padding: 0vh 0vh 0vh 2vh;
-}
-
-.persona {
-    border: 1px solid red;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.persona img{
-    border: 1px solid green;
-    width: 9vh;
-    height: 9vh;
-    margin: 0vh 1vh 0vh 1vh;
-    border-radius: 100%;
-
-}
-
-.info_img{
-    border: 1px solid blue;
+    font-size: 14px;
+    padding: 10px 15px;
     width: 100%;
+}
+
+.user_list{
+    background-color: var(--color-2);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.user_list img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+}
+
+.user_list .user_info{
+    margin-left: 10px;
+}
+
+.user_list .user_info h4{
+    margin: 0 0 10px;
+}
+
+.user_list .user_info p{
+    font-size: 12px;
+}
+
+.user_list li:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+}
+
+.user_list li.hide{
+    display: none;
 }
