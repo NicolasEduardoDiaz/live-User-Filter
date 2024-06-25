@@ -1,8 +1,8 @@
 const resultList = document.getElementById("result");
 
 const users = [
-    { avatar: 'avatar_url1', name_full: 'Name User 1', desciption: 'Description Users 1' },
-    { avatar: 'avatar_url2', name_full: 'Name User 2', desciption: 'Description Users 2' }
+    { avatar: 'avatar_url1', name_full: 'Name User 1', description: 'Description Users 1' },
+    { avatar: 'avatar_url2', name_full: 'Name User 2', description: 'Description Users 2' }
 ];
 
 export const getUsers = ()=> {
